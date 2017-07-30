@@ -1,0 +1,148 @@
+#nav {
+  height: 150px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+  color: #fff;
+  border-color: transparent;
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 35px;
+  transition: all ease .5s;
+  margin-top: 70px;
+  margin-left: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#nav li a {
+  color: white;
+  font-size: 25px;
+  transition: all ease .5s;
+  line-height: 175px;
+  font-family: 'Raleway', sans-serif;
+
+
+}
+
+
+#hero {
+  height: 1000px;
+  width: 100%;
+  background: url('http://i.imgur.com/ExmZGNy.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#nav.shrink {
+  height: 60px;
+  transition: all ease .5s;
+  background-color: rgba(0,0,0,0.5); 
+  color: #fff;
+  padding-top: 0px;
+
+}
+
+#Links {
+  padding-right: 80px;
+}
+#nav.shrink #logo {
+  margin-top: 5px;
+  font-size: 16px;
+  transition: all ease .5s;
+  color: white;
+  line-height: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#nav.shrink li a {
+  color: white;
+  font-size: 16px;
+  padding-top: 30px;
+  line-height: 0px;
+  font-family: 'Raleway', sans-serif;
+  float: right;
+}
+
+#abilities {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+#strongsuits {
+  font-size: 25px;
+  text-align: center;
+  color: grey;
+  padding-bottom: 75px;
+}
+
+#badges {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+#about {
+  color: white;
+  padding-top: 500px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+}
+
+#projects {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+
+
+#projectImages {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: 100% !important;
+  height: auto;
+  width: auto\9; /* ie8 */
+
+}
+
+#projectsWorked {
+  font-size: 25px;
+  text-align: center;
+  color: grey;
+  padding-bottom: 75px;
+}
+
+#contactMe {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  padding-top: 15px;
+}
+
+
+
+
+
+/*clears whitespace after footer*/
+header:after, section:after, article:after, footer:after, #navigation-top:after, #navigation-bottom:after, #page-header-wrapper:after, #banner-area-wrapper:after, #page-body-wrapper:after, #page-footer-wrapper:after, .clearer:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+font-size: 0;
+}

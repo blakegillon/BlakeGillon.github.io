@@ -1,0 +1,142 @@
+<html>
+
+<head>
+<!-- jQuery library link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/main.css">
+<!-- Google Fonts Raleway -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!-- Google Fonts Lobster -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<!-- Font awesome social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<title> Blake Gillon </title>
+
+<body>
+
+<!-- Navigation -->
+<nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="logo" class="navbar-brand" href="#">Blake Gillon</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="Links">
+      <ul id="Links" class="nav navbar-nav navbar-right">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#2">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li id="contact"><a href="#contactMe">Contact</a></li>
+
+      
+      </form>
+     </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--Sections -->
+ <div id="hero">
+ <p id="about"> Front-end Developer </p>
+ </div>
+
+ <div id="2" style="min-height:700px;background:white;">
+ <p id="abilities"><strong>My Abilities</strong></p>
+ <p id="strongsuits">These are my current strongsuits.</p>
+ <img id="badges" src="images/badges.jpg" alt="badges">
+ </div>
+
+ <div id="projects" style="min-height:1000px;background:#E5E7E9;">
+ <p id="projects"><strong>Projects</strong></p>
+ <p id="projectsWorked">These are some projects that I have worked on.</p>
+ <div id="projectImages">
+ <img id="project1" src="images/project1.png" alt="project1">
+ <img id="project2" src="images/project2.png" alt="project2">
+ <img id="project3" src="images/project3.png" alt="project3">
+ </div>
+
+ </div>
+
+ <footer id="contactMe" style="min-height:100px;background:black;">
+ <p id="contactMe"> 
+ 
+
+  
+      <a class="button social" href="https://www.facebook.com/kickbacksc"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+    
+      <a class="button social" href="https://www.linkedin.com/in/blake-gillon-36924891/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+      <a class="button social" href="https://github.com/blakegillon"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+   
+</p>
+
+ </footer>
+
+
+
+<!-- Smooth scrolling jQuery script -->
+<script>
+// Select all links with hashes
+$('.nav li a')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/navshrink.js"></script>
+
+
+
+
+
+
+</body>
+</html>
